@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<!-- Esse formato de página CarouselPage não existe na hora de criar a pagina, vc deve criar uma ContentPage e mudar pra Caroucelpage-->
+    
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:tipoPagina="clr-namespace:XamarinTipoPagina.TipoPagina.Carrousel"
+             mc:Ignorable="d"
+             x:Class="XamarinTipoPagina.TipoPagina.Carrousel.Introducao">
+    <!-- xmlns:tipoPagina="clr-namespace:XamarinTipoPagina.TipoPagina.Carrousel" deve ser criada pra instanciar as outras páginas -->
+
+    <!-- Aqui em baixo temos Várias formas de chamar as paginas já criadas ou de criá-las dentro do carousel-->
+    
+    <tipoPagina:TipoPagina1 />
+    <tipoPagina:TipoPagina2 ></tipoPagina:TipoPagina2>
+    <tipoPagina:TipoPagina3 ></tipoPagina:TipoPagina3>
+    <ContentPage>
+        <StackLayout>
+            <Label Text="Página 4"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <Label Text="Página 5"/>
+    </ContentPage>
+    <ContentPage>
+        <StackLayout VerticalOptions="CenterAndExpand" >
+            <Label Text="Página 6" TextColor="Blue"
+
+                HorizontalOptions="CenterAndExpand" />
+            <Image Source="featured.png"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage>
+        <Label Text="Página 7"/>
+    </ContentPage>
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="LightSkyBlue">
+        <ContentPage.Content>
+            <StackLayout VerticalOptions="CenterAndExpand" >
+                <Label Text="Página 8" TextColor="Blue"
+
+                HorizontalOptions="CenterAndExpand" />
+                <Image Source="featured.png"/>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+</CarouselPage>
